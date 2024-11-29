@@ -1,16 +1,19 @@
-public class Cliente extends Pessoa {
-     private String telefone;
-     public Cliente (String nome , String cpf, String telefone) {
-        super(nome,cpf);
-        this.telefone = telefone;
-     }
-    
-    public String getTelefone(){
-        return telefone;
+package model;
+
+public class Cliente {
+    private String nome;
+    private String cpf;
+
+    public Cliente(String nome, String cpf) {
+        this.nome = nome;
+        this.cpf = cpf;
     }
-    
-    @Override
-    public void exibirDados(){
-      System.out.println("Cliente: + getNome() +"+" -CPF:" + getCpf() +"-Telefone:" + telefone);
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getCpf() {
+        return cpf;
     }
 }

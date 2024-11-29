@@ -1,3 +1,5 @@
+package model;
+
 public abstract class Pessoa {
     private String nome;
     private String cpf;
@@ -15,5 +17,5 @@ public abstract class Pessoa {
         return cpf;
     }
 
-    public abstract void exibirDados(); 
+    public abstract void exibirDados();
 }
